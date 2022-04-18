@@ -1,0 +1,6 @@
+domain: test.crd.tatsuki
+layout:
+- go.kubebuilder.io/v3
+projectName: testcrd
+repo: testCRD
+version: "3"
