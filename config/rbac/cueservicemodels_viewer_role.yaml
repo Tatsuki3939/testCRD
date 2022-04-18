@@ -1,0 +1,20 @@
+# permissions for end users to view cueservicemodels.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cueservicemodels-viewer-role
+rules:
+- apiGroups:
+  - models.test.crd.tatsuki
+  resources:
+  - cueservicemodels
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - models.test.crd.tatsuki
+  resources:
+  - cueservicemodels/status
+  verbs:
+  - get

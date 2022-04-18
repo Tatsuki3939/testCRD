@@ -1,0 +1,24 @@
+# permissions for end users to edit cueservicemodels.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cueservicemodels-editor-role
+rules:
+- apiGroups:
+  - models.test.crd.tatsuki
+  resources:
+  - cueservicemodels
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - models.test.crd.tatsuki
+  resources:
+  - cueservicemodels/status
+  verbs:
+  - get

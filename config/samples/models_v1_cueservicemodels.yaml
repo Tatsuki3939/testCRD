@@ -1,0 +1,6 @@
+apiVersion: models.test.crd.tatsuki/v1
+kind: CueServiceModels
+metadata:
+  name: cueservicemodels-sample
+spec:
+  # TODO(user): Add fields here

@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: testcrd
 repo: testCRD
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: test.crd.tatsuki
+  group: models
+  kind: CueServiceModels
+  path: testCRD/api/v1
+  version: v1
 version: "3"
