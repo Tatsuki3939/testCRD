@@ -29,7 +29,9 @@ type CueServiceModelsSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of CueServiceModels. Edit cueservicemodels_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// Foo string `json:"foo,omitempty"`
+	DeploymentName string  `json:"deploymentName"`
+	Replicas *int32 `json:"replicas"`
 }
 
 // CueServiceModelsStatus defines the observed state of CueServiceModels
